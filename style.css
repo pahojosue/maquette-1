@@ -1,3 +1,250 @@
-.first-part {
-    background-image: url(Images/landing.jpg);
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #F6EBCD;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'Times New Roman';
+}
+
+/* First Part */
+.header {
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 80px;
+}
+.header-large {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: serif;
+}
+.header-small {
+    font-size: 18px;
+    font-family: serif;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 80px;
+    column-gap: 20px;
+}
+.header-right>a.active {
+    color: red;
+    border-bottom: 2px solid red;
+    line-height: 30px;
+    list-style-type: none;
+}
+.header-right>a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+.header-right>a:hover {
+    color: red;
+    transition: 0.1s ease-in;
+}
+
+/* Second Part */
+.first-part>img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.first-content {
+    position: absolute;
+    bottom: 0;
+    margin: auto auto 150px 65px;
+}
+.first-content>p {
+    font-size: 20px;
+    color: white;
+}
+.first-content>a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.redirect {
+    text-decoration: none;
+    color: white;
+    background-color: #79060D;
+    border-radius: 5px;
+    padding: 16px 25px;
+    text-shadow: none;
+    top: 0;
+    transition: top ease 0.3s;
+    position: relative;
+}
+.redirect:hover {
+    background-color: #F39C12;
+    transition: 0.3s ease-out;
+    top: -4px;
+}
+
+/* Third Part */
+.second-part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+}
+.second-left {
+    flex: 20%;
+    margin: 60px 31px auto 8%;
+}
+.second-left>p {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.5rem;
+}
+.image-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.image-text>h1 {
+    color: #2C3E50;
+    font-size: 28px;
+}
+.image-text>img {
+    margin-right: 10px;
+}
+
+.second-right {
+    flex: 8%;
+    background-color: #6E6963;
+    margin: 3% 5% auto 10px;
+    border-radius: 10px;
+}
+.person-text {
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.person-image {
+    align-content: center;
+    width: 100px;
+    margin: 0 auto;
+}
+.second-right p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.f-paragraph {
+    margin: 30px 25px auto 25px;
+}
+.s-paragraph {
+    margin: 20px 25px auto 25px;
+}
+.social-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 18px;
+    margin: 42px 10px 20px 40px;
+    padding-bottom: 20px;
+}
+.social-images>a>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: top ease 0.5s;
+    position: relative;
+}
+.social-images>a>img:hover {
+    transition: 0.3s ease-out;
+    top: -4px;
+}
+
+/* Fourth Part */
+.footer {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    margin-left: 5%;
+    margin-top: 75px;
+    padding-bottom: 40px;
+}
+.footer h1 {
+    margin-bottom: 30px;
+}
+
+.bottom-left {
+    flex: 25%;
+}
+.bottom-left>p{
+    font-size: 15px;
+}
+.small {
+    font-size: 12px;
+    line-height: 1.8rem;
+}
+
+.bottom-middle {
+    flex: 20%;
+}
+.bottom-images {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.bottom-images>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+.bottom-images>img:hover {
+    width: 85px;
+    height: 85px;
+    transition: ease-out 0.3s;
+}
+
+.bottom-right {
+    flex: 30%;
+    margin-left: 40px;
+}
+.contain {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    color: red;
+}
+.footer-right>p {
+    font-style: italic;
+}
+
+.footer h1 {
+    font-size: 20px;
+}
+
+
+/*responsive tablette*/
+/* @media screen and (max-width:900px) {
+    .second-left>p {
+        font-size: 0.5rem
+    }
 }

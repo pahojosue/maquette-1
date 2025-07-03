@@ -14,7 +14,6 @@ h1 {
     height: 15%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .header-left {
@@ -227,12 +226,20 @@ h1 {
     flex: 30%;
     margin-left: 40px;
 }
+.bottom-right>h1 {
+    margin-bottom: 18px;
+}
+
 .contain {
     display: flex;
     flex-direction: row;
     column-gap: 20px;
     color: red;
 }
+.contain p {
+    font-size: 0.9rem;
+}
+
 .footer-right>p {
     font-style: italic;
 }
@@ -242,9 +249,100 @@ h1 {
 }
 
 
-/*responsive tablette*/
-/* @media screen and (max-width:900px) {
-    .second-left>p {
-        font-size: 0.5rem
+
+
+/* -------------- Responsive Mobile ----------------------*/
+@media screen and (max-width:768px) {
+    /* First Part */
+    .header {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .header-left {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-right {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Second Part */
+    .first-part {
+        height: 450px;
+    }
+    .first-part>img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .first-content {
+        top: 0;
+        left: 0;
+        margin-top: 460px;
+        margin-left: 20px;
+    }
+    .first-content>p {
+        color: rgb(60, 59, 59);
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 3px rgb(127, 125, 125);
+    }
+
+    /* Third Part */
+    .second-part {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .second-left {
+        padding-right: 50px;
+        padding-top: 5px;
+    }
+    .second-left>div {
+        padding-bottom: 0px;
+    }
+
+    .social-images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        column-gap: 25px;
+        row-gap: 18px;
+        margin: 42px auto 20px auto;
+        padding-bottom: 20px;
+    }
+
+
+    /* Fourth Part */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-top: 75px;
+        padding-bottom: 40px;
+    }
+
+    .bottom-images {
+        margin-bottom: 20px;
+    }
+    .bottom-images>img {
+        width: 160px;
+    }
+
+    .bottom-right {
+        margin-left: 0px;
+    }
+    .contain {
+        padding-top: 0px;
     }
 }

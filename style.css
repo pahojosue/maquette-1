@@ -59,17 +59,20 @@ h1 {
 }
 
 /* Second Part */
+.first-part {
+    position: relative;
+}
 .first-part>img {
     height: 400px;
     width: 100%;
     object-fit: cover;
-    position: relative;
 }
 
 .first-content {
     position: absolute;
-    bottom: 0;
-    margin: auto auto 150px 65px;
+    bottom: 60px;
+    left: 5%;
+    /* margin: auto auto 150px 65px; */
 }
 .first-content>p {
     font-size: 20px;
@@ -284,10 +287,8 @@ h1 {
     }
 
     .first-content {
-        top: 0;
-        left: 0;
-        margin-top: 460px;
-        margin-left: 20px;
+        top: 310px;
+        left: 3%;
     }
     .first-content>p {
         color: rgb(60, 59, 59);

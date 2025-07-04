@@ -280,11 +280,9 @@ h1 {
 
     .bottom-images {
         width: 100%;
-        outline: 1px solid red;
     }
 
     .bottom-middle {
-        outline: 1px solid red;
         margin-left: 0px;
     }
     .bottom-middle>h1 {
@@ -456,7 +454,6 @@ h1 {
     }
 
     .first-part>img{
-        outline: 1px solid red;
         margin-top: 35px;
     }
 

@@ -5,7 +5,7 @@
 
 body {
     height: 100vh;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #F6EBCD;
     margin: 0;
     padding: 0;
@@ -89,6 +89,11 @@ h1 {
     font-weight: 600;
 }
 
+.b {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 .redirect {
     text-decoration: none;
     color: white;
@@ -120,7 +125,7 @@ h1 {
 .second-left>p {
     font-size: 1rem;
     color: #555555;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 .image-text {
     display: flex;
@@ -141,6 +146,9 @@ h1 {
     background-color: #6E6963;
     margin: 3% 3% auto 10px;
     border-radius: 10px;
+}
+.second-right p {
+    line-height: 1.7rem;
 }
 .person-text {
     text-align: center;
@@ -350,8 +358,13 @@ h1 {
     }
 
     .second-right {
-        margin: 30px 5%;
+        margin: 30px 3%;
         flex: 1 1 auto;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .second-right p {
+        line-height: 1.5rem;
     }
 
     .social-images {
@@ -418,14 +431,14 @@ h1 {
         margin-top: 15px;
     }
 
-    .second-left p {
+    .second-part {
         padding-left: 20px;
         padding-right: 20px;
     }
 
     .social-images {
-        width: 180px;
-        column-gap: 30px;
+        width: 90%;
+        column-gap: 25px;
     }
     .bottom-images > img {
         /* width: 100%; */
